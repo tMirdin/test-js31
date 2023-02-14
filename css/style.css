@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  border: 1px solid gray;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  min-width: 40%;
+  height: 200px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.block:nth-child(even) {
+  background-color: yellow;
+}
+
+.block:nth-child(odd) {
+  background-color: green;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    min-width: 50%;
+  }
+  .container {
+    background-color: aqua;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .block {
+    min-width: 320px;
+    background-color: antiquewhite;
+  }
+  .container {
+    display: block;
+  }
+}
