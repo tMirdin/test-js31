@@ -25,6 +25,10 @@ body {
   background-color: green;
 }
 
+#img {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .block {
     min-width: 50%;
@@ -42,5 +46,8 @@ body {
   }
   .container {
     display: block;
+  }
+  #img {
+    display: inline;
   }
 }
